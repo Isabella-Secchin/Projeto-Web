@@ -1,0 +1,144 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  padding-top: 100px;
+  box-sizing: border-box;
+
+  background: linear-gradient(135deg, #fff5f9, #f5f5f5);
+}
+
+.login-container {
+  width: 400px;
+  max-width: calc(100% - 40px);
+
+  margin: 0 auto;
+  padding: 35px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+  margin: 0 0 30px 0;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  color: #222;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  height: 46px;
+
+  padding: 0 14px;
+
+  font-size: 15px;
+
+  border: 2px solid #ddd;
+  border-radius: 8px;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #e85c91;
+
+  box-shadow:
+    0 0 0 3px rgba(232, 92, 145, 0.15);
+}
+
+.campo-email {
+  position: relative;
+}
+
+.campo-email input {
+  width: 100%;
+}
+
+.criar-conta {
+  position: absolute;
+
+  right: 0;
+  top: -25px;
+
+  border: none;
+  background: transparent;
+
+  color: #e85c91;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.criar-conta:hover {
+  color: #d94b80;
+  text-decoration: underline;
+}
+
+.esqueci {
+  align-self: flex-end;
+
+  margin-top: -10px;
+
+  border: none;
+  background: transparent;
+
+  color: #555;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.esqueci:hover {
+  color: #e85c91;
+  text-decoration: underline;
+}
+
+.entrar {
+  height: 50px;
+
+  margin-top: 5px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #e85c91;
+  color: white;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.entrar:hover {
+  background: #d94b80;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(232, 92, 145, 0.3);
+}

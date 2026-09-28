@@ -1,0 +1,50 @@
+<div class="login-container">
+
+  <h2>Login</h2>
+
+  <form (ngSubmit)="entrar()">
+
+    <div class="campo-email">
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="email"
+        placeholder="E-mail"
+        required
+      >
+
+      <button
+        type="button"
+        class="criar-conta"
+        (click)="criarConta()"
+      >
+        Criar conta
+      </button>
+    </div>
+
+    <input
+      type="password"
+      name="senha"
+      [(ngModel)]="senha"
+      placeholder="Senha"
+      required
+    >
+
+    <button
+      type="button"
+      class="esqueci"
+      (click)="esqueciSenha()"
+    >
+      Esqueci a senha
+    </button>
+
+    <button
+      type="submit"
+      class="entrar"
+    >
+      ENTRAR
+    </button>
+
+  </form>
+
+</div>

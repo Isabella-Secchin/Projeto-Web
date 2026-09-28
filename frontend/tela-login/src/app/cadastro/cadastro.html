@@ -1,0 +1,58 @@
+<div class="cadastro-container">
+
+  <h2>Criar conta</h2>
+  <p class="subtitulo">Preencha seus dados para se cadastrar</p>
+
+  <form (ngSubmit)="cadastrar()">
+
+    <label>Nome</label>
+    <input
+      type="text"
+      name="nome"
+      [(ngModel)]="nome"
+      placeholder="Digite seu nome"
+      required
+    >
+
+    <label>E-mail</label>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      placeholder="Digite seu e-mail"
+      required
+    >
+
+    <label>Senha</label>
+    <input
+      type="password"
+      name="senha"
+      [(ngModel)]="senha"
+      placeholder="Digite sua senha"
+      required
+    >
+
+    <label>Confirmar senha</label>
+    <input
+      type="password"
+      name="confirmarSenha"
+      [(ngModel)]="confirmarSenha"
+      placeholder="Confirme sua senha"
+      required
+    >
+
+    <button type="submit" class="cadastrar">
+      CADASTRAR
+    </button>
+
+    <button
+      type="button"
+      class="voltar"
+      (click)="voltarLogin()"
+    >
+      Voltar
+    </button>
+
+  </form>
+
+</div>
